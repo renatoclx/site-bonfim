@@ -1,0 +1,435 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    font-weight: 500;
+}
+
+header .cabecalho {
+    display: flex;
+    width: 1200px;
+    background-color: #fff;
+    align-items: center;
+
+}
+
+.menu {
+    width: 1156px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 3px;
+}
+
+.botao:hover {
+
+    transition: 0.3s;
+    background-color:#d3b748;
+    color: white;
+}
+
+.menu .itens-menu {
+    width: 1000px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 18;
+}
+
+.sobre-nos {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: #d3b748;
+    justify-content: center;
+    background-image: url("/imgs/images/lampadaBranco.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-attachment: fixed;
+    background-position-x: 60rem;
+    
+}
+
+.sobre-nos .conteudo {
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    flex-direction: row;
+    position: absolute;
+}
+
+.lado-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+.lado-b {
+    display: flex;
+    width: 600px;
+    padding-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.diferencial {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+.diferencial .conteudo {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 250px;
+    flex-direction: row;
+}
+
+.diferencial .conteudo .destaque {
+    width: 330px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.destaque .titulo {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #d3b748;
+    margin-bottom: 5px;
+}
+
+.destaque .icone {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.destaque .texto {
+    color: #0c0c0c;
+    font-weight: 200;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.marcas {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    justify-content: center;
+    padding: 10px;
+    z-index: 10;
+}
+
+.marcas .titulo {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #d3b748;
+}
+
+.marcas .titulo .subtitulo {
+    font-weight: 400;
+    color: #0c0c0c;
+}
+
+.depoimentos {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: #f7f7f7;
+    justify-content: start;
+    padding: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos .titulo {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #d3b748;
+}
+
+.depoimentos .titulo .subtitulo {
+    font-weight: 400;
+    color: #0c0c0c;
+
+}
+
+.area-cliente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 300px;
+    flex-direction: row;
+}
+
+.area-cliente .area-depoimento {
+    width: 260px;
+    height: 220px;
+    display: flex;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 3%;
+    flex-direction: column;
+}
+
+.area-depoimento .texto-depoimento {
+    font-style: italic;
+    color: #0c0c0c;
+    padding: 5px;
+    font-weight: 200;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.area-cliente .area-depoimento .cliente {
+    padding: 5px;
+    font-size: 15px;
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.cliente p {
+    margin-bottom: 0;
+}
+
+.projetos {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url("/imgs/images/fachada2.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: start;
+    padding: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos .titulo-projeto {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.projetos .subtitulo-projeto {
+    font-weight: 500;
+    color: #f0c415;
+
+}
+
+.area-videos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 400px;
+}
+
+.area-videos .video {
+    width: 320px;
+    height: 215px;
+    background-color: #fff;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #a8a8a8;
+    justify-content: center;
+}
+
+.rodape .area-rodape {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 200px;
+    
+}
+
+.area-rodape .logo-esquerda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+}
+
+.logo-esquerda img {
+    width: 183px;
+    height: 142px;
+}
+
+.area-rodape .redes-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    padding-top: 25px;
+}
+
+.redes-direita .sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 60px;
+}
+
+.redes-direita .sociais .icone {
+    width: 60px;
+    height: 60px;
+}
+
+.redes-direita .sociais .icone img {
+    width: 60px;
+    height: 60px;
+}
+
+.redes-direita .contato {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.redes-direita .contato p {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+
+.final {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #d3ad16;
+    justify-content: center;
+    padding-top: 2px;
+    align-items: center;
+}
+
+.final p {
+    margin-bottom: 0rem;
+}
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+}
+
+.slides-track {
+    display: flex;
+    width:  calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+
+.slides-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slides {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slides img {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.slides img:hover {
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg)
+}
